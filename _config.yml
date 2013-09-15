@@ -16,7 +16,7 @@ url: http://qwinff.github.io
 root: /
 permalink: post/:year/:month/:day/:title/
 tag_dir: tags
-archive_dir: archives
+archive_dir: news
 category_dir: categories
 code_dir: downloads/code
 
