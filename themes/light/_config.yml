@@ -1,9 +1,12 @@
 menu:
   Home: /
-  Archives: /archives
+  Features: /p/features.html
+  Screenshots: /p/screenshots.html
+  Downloads: /p/downloads.html
+  About: /p/about.html
+#  Archives: /archives
 
 widgets: 
-- search
 - category
 - tag
 

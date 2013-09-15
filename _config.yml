@@ -3,18 +3,18 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
+title: QWinFF
+subtitle: Convert your media files easily
+description: QWinFF is an intuitive media converter gui
+author: The QWinFF Team
 email:
 language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://qwinff.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: post/:year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
