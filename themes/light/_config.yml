@@ -7,8 +7,6 @@ menu:
 #  Archives: /archives
 
 widgets: 
-- category
-- tag
 - recent_posts
 
 excerpt_link: Read More
