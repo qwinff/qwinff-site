@@ -6,8 +6,8 @@ tweets: Tweets
 prev: Prev
 next: Next
 comment: Comments
-archive_a: Archives
-archive_b: Archives: %s
+archive_a: News
+archive_b: News: %s
 page: Page %d
 recent_posts: News
 display_all: Display All
