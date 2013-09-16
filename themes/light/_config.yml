@@ -1,9 +1,10 @@
 menu:
   Home: /
-  Features: /p/features.html
-  Screenshots: /p/screenshots.html
-  Downloads: /p/downloads.html
-  About: /p/about.html
+  Features: /features
+  Screenshots: /screenshots
+  Downloads: /downloads
+  Translate: /translate
+  About: /about
 #  Archives: /archives
 
 widgets: 
