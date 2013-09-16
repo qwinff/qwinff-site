@@ -31,8 +31,8 @@ multi_thread: true
 filename_case: 0
 highlight:
   enable: true
-  line_number: true
-  tab_replace:
+  line_number: false
+  tab_replace: "   "
 
 # Category & Tag
 default_category: uncategorized
