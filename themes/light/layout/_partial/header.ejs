@@ -2,13 +2,15 @@
   <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
   <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
 </div>
-<nav id="main-nav" class="alignright">
+<br>
+<nav id="main-nav">
   <ul>
     <% for (var i in theme.menu){ %>
       <% if (theme.menu[i] == config.root + path || theme.menu[i] + "/index.html" == config.root + path
                 || theme.menu[i] == config.root && path == "index.html") { %>
         <li><%= i %></li>
       <% } else { %>
+	<br>
         <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
       <% } %>
     <% } %>
