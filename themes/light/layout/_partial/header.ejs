@@ -5,7 +5,7 @@
 <nav id="main-nav" class="alignright">
   <ul>
     <% for (var i in theme.menu){ %>
-      <% if (theme.menu[i] == config.root + path || (theme.menu[i] == "/" && path == "index.html")) { %>
+      <% if (theme.menu[i] == config.root + path || (theme.menu[i] == config.root && path == "index.html")) { %>
         <li><%= i %></li>
       <% } else { %>
         <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
