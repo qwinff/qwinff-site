@@ -1,6 +1,7 @@
 <div class="alignleft">
-  <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
-  <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
+  <a href="<%- config.root %>"><img src="/img/logo_256.png">
+  <h1><%= config.title %></h1>
+  <h2><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2></a>
 </div>
 <br>
 <nav id="main-nav">
@@ -8,11 +9,11 @@
     <% for (var i in theme.menu){ %>
       <% if (theme.menu[i] == config.root + path || theme.menu[i] + "/index.html" == config.root + path
                 || theme.menu[i] == config.root && path == "index.html") { %>
-    <br>    
-    <li><%= i %></li>
+    <li><span class="actived_nav"><%= i %></span></li>
+    <br>
       <% } else { %>
+        <a href="<%- theme.menu[i] %>"><li><%= i %></li></a>
 	<br>
-        <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
       <% } %>
     <% } %>
   </ul>

@@ -1,32 +1,50 @@
 #header
-  margin-left 30px
-  width: 245px
+  margin-left 0
+  padding-left 30px
+  background-color #3d464f
+  width: 15em
   float: left
-  text-shadow 0 0 1px #fff
+  color #bbb
   a
-    color #999
+    color #bbb
+    width 10em
     &:hover
-      color color-link
+      color #fff
+      text-shadow 0 0 0.3em #fff, 0 0 0.1em #fff
       text-decoration none
-    
-  h1
+  img
     margin-top 30px
+
+  h1
     font-weight normal
     font-size 2.5em
     line-height 1
+    margin-top 10px
 
   h2
     font-weight normal
     font-size 0.9em
     line-height 1
     margin-top 10px
-  
+    margin-bottom 20px
+    
   #main-nav
+    display block
     font-family font-title
-    line-height 2.5em
+    line-height 2em
+    font-size 1.2em
+    font-weight 100
     ul
       float left
       list-style none
-      li
-        float left
-        margin-left 30px
+      a
+        text-shadow none
+        &:hover 
+          text-shadow 0 0 0.3em #fff, 0 0 0.1em #fff
+    li
+      float left
+      margin -5px 0px
+      padding-left 30px
+    .actived_nav
+      color #fff
+      background-color #657483
