@@ -8,7 +8,8 @@
     <% for (var i in theme.menu){ %>
       <% if (theme.menu[i] == config.root + path || theme.menu[i] + "/index.html" == config.root + path
                 || theme.menu[i] == config.root && path == "index.html") { %>
-        <li><%= i %></li>
+    <br>    
+    <li><%= i %></li>
       <% } else { %>
 	<br>
         <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
