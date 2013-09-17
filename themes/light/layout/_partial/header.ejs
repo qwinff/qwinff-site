@@ -6,9 +6,13 @@
 <br>
 <nav id="main-nav">
   <ul>
+    <% // canonicalize path
+       var current_path = (config.root + path).replace(/\/index\.html$/g, ""); // no trailing index.html
+       current_path = current_path.replace(/\/$/g, ""); // no trailing /
+       if (current_path == "") current_path = "/"; // if empty, fill in root (/)
+    %>
     <% for (var i in theme.menu){ %>
-      <% if (theme.menu[i] == config.root + path || theme.menu[i] + "/index.html" == config.root + path
-                || theme.menu[i] == config.root && path == "index.html") { %>
+      <% if (theme.menu[i] == current_path) { %>
     <li><span class="actived_nav"><%= i %></span></li>
     <br>
       <% } else { %>
