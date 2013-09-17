@@ -6,13 +6,15 @@
 <br>
 <nav id="main-nav">
   <ul>
-    <% // canonicalize path
-       var current_path = (config.root + path).replace(/\/index\.html$/g, ""); // no trailing index.html
-       current_path = current_path.replace(/\/$/g, ""); // no trailing /
-       if (current_path == "") current_path = "/"; // if empty, fill in root (/)
+    <% var canonical_path = function(p) {
+         var result = p.replace(/\/index\.html$/g, ""); // no trailing index.html
+         result = result.replace(/\/$/g, ""); // no trailing /
+         result = result.replace("//", "/"); // no consecutive /
+         return result;
+       }
     %>
     <% for (var i in theme.menu){ %>
-      <% if (theme.menu[i] == current_path) { %>
+      <% if (canonical_path(theme.menu[i]) == canonical_path(config.root + path)) { %>
     <li><span class="actived_nav"><%= i %></span></li>
     <br>
       <% } else { %>
