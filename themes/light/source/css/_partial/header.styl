@@ -25,29 +25,30 @@
 
   h2
     font-weight normal
-    font-size 0.9em
+    font-size 0.8em
     line-height 1
     margin-top 10px
     margin-bottom 20px
     
   #main-nav
+    position relative
     margin-left -30px
     display block
     font-family font-title
     line-height 2em
     font-size 1.2em
     font-weight 100
-    ul
-      float left
-      list-style none
-      a
-        text-shadow none
-        &:hover 
-          text-shadow 0 0 0.3em #fff, 0 0 0.1em #fff
-    li
-      float left
-      margin -5px 0px
-      padding-left 60px
+    float left
+    list-style none
+    a
+      position relative
+      display block
+      padding 5px 0 5px 60px
+      text-shadow none
+      &:hover 
+        text-shadow 0 0 0.3em #fff, 0 0 0.1em #fff
     .actived_nav
+      display block
+      padding 5px 0 5px 60px
       color #fff
       background-color #657483

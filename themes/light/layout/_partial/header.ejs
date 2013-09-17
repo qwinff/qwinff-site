@@ -5,7 +5,6 @@
 </div>
 <br>
 <nav id="main-nav">
-  <ul>
     <% var canonical_path = function(p) {
          var result = p.replace(/\/index\.html$/g, ""); // no trailing index.html
          result = result.replace(/\/$/g, ""); // no trailing /
@@ -15,14 +14,9 @@
     %>
     <% for (var i in theme.menu){ %>
       <% if (canonical_path(theme.menu[i]) == canonical_path(config.root + path)) { %>
-    <li><span class="actived_nav"><%= i %></span></li>
-    <br>
+    <span class="actived_nav"><%= i %></span>
       <% } else { %>
-        <a href="<%- theme.menu[i] %>"><li><%= i %></li></a>
-	<br>
+        <a href="<%- theme.menu[i] %>"><%= i %></a>
       <% } %>
     <% } %>
-  </ul>
-  <div class="clearfix"></div>
 </nav>
-<div class="clearfix"></div>
