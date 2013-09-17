@@ -63,7 +63,9 @@ QWinFF packages for Fedora are also available via openSUSE Build Service. The fo
 - Fedora 18
 - Fedora 19
 
-However, FFmpeg is not included in the official repository of Fedora. The recommended way to install ffmpeg on Fedora is using the [rpm-fusion](http://rpmfusion.org/) repository. The complete installation process is as follow:
+NOTE: FFmpeg is not included in the official repository of Fedora. The recommended way to install ffmpeg on Fedora is using the [rpm-fusion](http://rpmfusion.org/) repository.
+
+The complete installation process is as follow:
 
 ``` bash
 # get fedora release
