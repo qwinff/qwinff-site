@@ -2,9 +2,10 @@
 <div class="widget tag">
   <h3 class="title"><%= __('recent_posts') %></h3>
   <ul class="entry">
-    <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+    <% site.posts.sort('date', -1).limit(20).each(function(post){ %>
       <li>
-        <a href="<%= config.root %><%= post.path %>"><%= post.title %></a>
+	<time class="release" datetime="<%= post.date.toDate().toISOString() %>"><%= post.date.format(config.date_format) %></time><br>
+	<a href="<%- config.root %><%- post.path %>"><%= post.title %></a>
       </li>
     <% }); %>
   </ul>
