@@ -15,18 +15,18 @@ QWinFF depends on the following programs at runtime:
 
 The current version is 0.1.9, released on September 10, 2013.
 
-## Source Code
-
+<div class="distro"><div class="circle"><img src="/img/distro/tarball.png"></div><div class="content">
+<h2>Source Code</h2>
 [tar.bz2 format](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff_0.1.9.tar.bz2/download)
-[tar.gz format](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff_0.1.9.tar.gz/download)
+[tar.gz format](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff_0.1.9.tar.gz/download)</div></div>
 
-## Windows
-
+<div class="distro"><div class="circle"><img src="/img/distro/windows.png"></div><div class="content">
+<h2>Windows</h2>
 [QWinFF Installer](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff_0.1.9-setup.exe/download): install QWinFF on your computer
-[QWinFF Portable](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff-portable-0.1.9.7z/download): Portable version that doesn't require installation (7zip archive)
+[QWinFF Portable](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff-portable-0.1.9.7z/download): Portable version that doesn't require installation (7zip archive)</div></div>
 
-## Ubuntu/Mint
-
+<div class="distro"><div class="circle"><img src="/img/distro/ubuntu.png"></div><div class="content">
+<h2>Ubuntu/Mint</h2>
 PPA for QWinFF is available at https://launchpad.net/~lzh9102/+archive/qwinff. You can install from the ppa by the following command:
 
 ``` bash
@@ -34,9 +34,10 @@ sudo apt-add-repository ppa:lzh9102/qwinff
 sudo apt-get update
 sudo apt-get install qwinff
 ```
+</div></div>
 
-## openSUSE
-
+<div class="distro"><div class="circle"><img src="/img/distro/opensuse.png"></div><div class="content">
+<h2>openSUSE</h2>
 QWinFF packages for openSUSE are provided via openSUSE Build Service repositories. Supported releases are
 
 - openSUSE 12.1
@@ -54,9 +55,11 @@ sudo zypper refresh
 # install qwinff
 sudo zypper install qwinff
 ```
+</div></div>
 
-## Fedora
 
+<div class="distro"><div class="circle"><img src="/img/distro/fedora.png"></div><div class="content">
+<h2>Fedora</h2>
 QWinFF packages for Fedora are also available via openSUSE Build Service. The following releases are supported currently:
 
 - Fedora 17
@@ -82,3 +85,4 @@ sudo yum-config-manager --add-repo \
 # install qwinff
 sudo yum install qwinff
 ```
+</div></div>
