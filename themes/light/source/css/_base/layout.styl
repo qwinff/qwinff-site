@@ -56,3 +56,28 @@ html
 
 #main-col
   width 98%
+
+.ribbon a 
+  z-index 500
+  position absolute
+  display block
+  width 250px
+  background-color #a00
+  color #fff
+  right -60px
+  top 60px
+  transform rotate(45deg)
+  text-align center
+  font bold 1.2em Arial, sans-serif
+  padding 0.4em
+  border 1px solid #faa
+  box-shadow 0 0 0 2px #a00,0 0 10px 3px rgba(50,50,50,50)
+  text-shadow 0 0 2px #333
+  &:hover 
+    transition-property text-shadow, background-color
+    transition-delay 0s
+    transition-duration 0.3s
+    text-shadow 0 0 2px #fff,0 0 5px #fff
+    background-color #B80A0A
+    text-decoration none
+    color #fff
