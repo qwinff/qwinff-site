@@ -2,7 +2,10 @@
 
 <body>
   <div id="container">
-  <header id="header"><%- partial('_partial/header') %></header>
+  <header id="header">
+    <%- partial('_partial/header') %>
+    <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
+  </header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><%- body %></div></div>
     <div class="clearfix"></div>
@@ -13,7 +16,6 @@
   <style type="text/css">#container { padding-right: 0px !important } </style>
   <% } %>
   </div>
-  <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
   <%- partial('_partial/after_footer') %>
 </body>
 </html>
