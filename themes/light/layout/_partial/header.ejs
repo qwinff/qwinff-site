@@ -11,12 +11,21 @@
          result = result.replace("//", "/"); // no consecutive /
          return result;
        }
+       var format_link = function(url, link_text) {
+         var head;
+         if (url.charAt(0) == '/') { // internal link
+           head = "<a ";
+         } else { // external link
+           head = "<a class=\"external\" ";
+         }
+         return head + "href=\"" + url + "\">" + link_text + "</a>";
+       }
     %>
     <% for (var i in theme.menu){ %>
       <% if (canonical_path(theme.menu[i]) == canonical_path(config.root + path)) { %>
-    <span class="actived_nav"><%= i %></span>
+        <span class="actived_nav"><%= i %></span>
       <% } else { %>
-        <a href="<%- theme.menu[i] %>"><%= i %></a>
+        <%- format_link(theme.menu[i], i) %>
       <% } %>
     <% } %>
 </nav>
