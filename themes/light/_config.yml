@@ -1,11 +1,11 @@
 menu:
   Home: /
-  Features: /features
-  Screenshots: /screenshots
-  Downloads: /downloads
-  Documentation: /doc
-  Translate: /translate
-  About: /about
+  Features: /features.html
+  Screenshots: /screenshots.html
+  Downloads: /downloads.html
+  Documentation: /documents.html
+  Translate: /translate.html
+  About: /about.html
 #  Archives: /archives
 
 widgets: 
