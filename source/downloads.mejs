@@ -5,6 +5,7 @@ date: 2013-09-15 17:14:03
 <%
 // variables
 var version = "0.1.9";
+var release_date = "September 10, 2013";
 var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3"];
 var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19"];
 
@@ -26,7 +27,7 @@ QWinFF depends on the following programs at runtime:
 - ffplay (optional, for previewing audio/video cutting)
 - sox (optional, for adjusting audio speed)
 
-The current version is <%= version %>, released on September 10, 2013.
+The current version is <%= version %>, released on <%= release_date %>.
 
 <div class="distro"><div class="logo"><img src="/img/distro/tarball.png"></div><div class="content">
 <h2>Source Code</h2>
