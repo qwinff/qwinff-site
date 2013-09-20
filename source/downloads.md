@@ -25,7 +25,7 @@ The current version is 0.1.9, released on September 10, 2013.
 [QWinFF Installer](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff_0.1.9-setup.exe/download): install QWinFF on your computer
 [QWinFF Portable](http://sourceforge.net/projects/qwinff/files/release/v0.1.9/qwinff-portable-0.1.9.7z/download): Portable version that doesn't require installation (7zip archive)</div></div>
 
-<div class="distro"><div class="logo"><img src="/img/distro/ubuntu.png"><br><br><img src="/img/distro/mint.png"></div><div class="content">
+<div class="distro"><div class="logo"><img src="/img/distro/ubuntu.png"><br><img src="/img/distro/mint.png"></div><div class="content">
 <h2>Ubuntu/Mint</h2>
 PPA for QWinFF is available at https://launchpad.net/~lzh9102/+archive/qwinff. You can install from the ppa by the following command:
 
