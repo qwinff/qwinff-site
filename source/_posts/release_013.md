@@ -1,0 +1,9 @@
+title: QWinFF 0.1.3 released
+date: 2012-02-12 14:27:52
+tags: change log
+---
+Version 0.1.3
+
+- Enable users to select the range of the media file to encode.
+- Fixed video encoding error on some systems due to ffmpeg multithread options.
+- Removed "-aq 60" option in OGG Vorbis to prevent inflating the output file.
