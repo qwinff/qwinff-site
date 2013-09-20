@@ -5,6 +5,8 @@ date: 2013-09-15 17:14:03
 <%
 // variables
 var version = "0.1.9";
+var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3"];
+var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19"];
 
 // functions
 function sourceforge_dl_url(file) {
@@ -50,11 +52,7 @@ sudo apt-get install qwinff
 <div class="distro"><div class="logo"><img src="/img/distro/opensuse.png"></div><div class="content">
 <h2>openSUSE</h2>
 QWinFF packages for openSUSE are provided via openSUSE Build Service repositories. Supported releases are
-
-- openSUSE 12.1
-- openSUSE 12.2
-- openSUSE 12.3
-
+<ul><% for (var i=0; i<opensuse_releases.length; i++) { %><li><%= opensuse_releases[i] %></li><% } %></ul>
 ``` bash
 # get opensuse release
 RELEASE=`cat /etc/SuSE-release | sed -n "s/VERSION = \(.*\)$/openSUSE_\1/p"`
@@ -72,11 +70,7 @@ sudo zypper install qwinff
 <div class="distro"><div class="logo"><img src="/img/distro/fedora.png"></div><div class="content">
 <h2>Fedora</h2>
 QWinFF packages for Fedora are also available via openSUSE Build Service. The following releases are supported currently:
-
-- Fedora 17
-- Fedora 18
-- Fedora 19
-
+<ul><% for (var i=0; i<fedora_releases.length; i++) { %><li><%= fedora_releases[i] %></li><% } %></ul>
 NOTE: FFmpeg is not included in the official repository of Fedora. The recommended way to install ffmpeg on Fedora is using the [rpm-fusion](http://rpmfusion.org/) repository.
 
 The complete installation process is as follow:
