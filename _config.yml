@@ -10,6 +10,11 @@ author: The QWinFF Team
 email:
 language:
 
+# Open Graph Protocol
+## cover can be overridden in front-matter of pages
+cover: /img/logo_256.png
+site_name: QWinFF Media Converter
+
 # Project Information
 project:
   github: http://github.com/qwinff/qwinff
