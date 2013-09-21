@@ -10,6 +10,10 @@ author: The QWinFF Team
 email:
 language:
 
+# Project Information
+project:
+  github: http://github.com/qwinff/qwinff
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://qwinff.github.io
