@@ -5,7 +5,7 @@
 # Site
 title: QWinFF
 subtitle: Convert your media files easily
-description: QWinFF is an intuitive media converter gui
+description: Convert your media files easily
 author: The QWinFF Team
 email:
 language:
@@ -14,6 +14,7 @@ language:
 ## cover can be overridden in front-matter of pages
 cover: /img/logo_256.png
 site_name: QWinFF Media Converter
+og_desc: Convert your media files easily
 
 # Project Information
 project:

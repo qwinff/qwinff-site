@@ -1,5 +1,6 @@
 title: About
 date: 2013-09-15 17:14:03
+og_desc: About QWinFF
 ---
 
 QWinFF is developed and maintained by [Timothy Lin](mailto:lzh9102@gmail.com)
