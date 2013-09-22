@@ -20,7 +20,11 @@ og_desc: Convert your media files easily
 project:
   github: http://github.com/qwinff/qwinff
   download_url: http://sourceforge.net/projects/qwinff/files/release/v{VERSION}/{FILE}/download
-
+  files:
+    tbz2: qwinff_{VERSION}.tar.bz2
+    tgz: qwinff_{VERSION}.tar.gz
+    w32_install: qwinff_{VERSION}-setup.exe
+    w32_portable: qwinff-portable-{VERSION}.7z
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
