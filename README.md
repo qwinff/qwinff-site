@@ -5,8 +5,8 @@ Release Notes
 
 Release notes of each version is posted as a `post` in `source/_posts/`.  Each
 release note post must contain `qwinff_release`, the integer representation of
-the version number, in its front matter. `qwinff_release` is defined as `major
-* 100 + minor * 10 + patch`; for example, the `qwinff_release` of version
+the version number, in its front matter. `qwinff_release` is defined as
+`major * 100 + minor * 10 + patch`; for example, the `qwinff_release` of version
   `0.1.9` is `19`.
 
 The following is an example release note post:
