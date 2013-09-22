@@ -26,6 +26,12 @@ var get_human_readable_release = function(release_id) {
 	return major + "." + minor + "." + patch;
 }
 
+var get_download_url = function(file, version) {
+	var download_url_tmpl = hexo.config.project.download_url.replace(/{VERSION}/g, version);
+	var filename = file.replace(/{VERSION}/g, version);
+	return download_url_tmpl.replace(/{FILE}/g, filename);
+}
+
 var generate_updateinfo = function(post, locals) {
 	var config = hexo.config;
 	var release_id = post.qwinff_release;
@@ -33,9 +39,9 @@ var generate_updateinfo = function(post, locals) {
 	var release_date = post.date.format("YYYYMMDD");
 	var release_notes = post.content; // processed content
 	var download_page = config.root + config.project.download_page;
-	var url_installer = "http://sourceforge.net/projects/qwinff/files/release/v{VERSION}/qwinff_{VERSION}-setup.exe/download".replace(/{VERSION}/g, release_name);
-	var url_portable = "http://sourceforge.net/projects/qwinff/files/release/v{VERSION}/qwinff-portable-{VERSION}.7z/download".replace(/{VERSION}/g, release_name);
-	var url_source = "http://sourceforge.net/projects/qwinff/files/release/v{VERSION}/qwinff_{VERSION}.tar.bz2/download".replace(/{VERSION}/g, release_name);
+	var url_installer = get_download_url(config.project.files.w32_install, release_name);
+	var url_portable = get_download_url(config.project.files.w32_portable, release_name);
+	var url_source = get_download_url(config.project.files.tbz2, release_name);
 
 	// generate xml
 	result = ["<?xml version=\"1.0\"?>", "<QWinFFVersionInfo>",
