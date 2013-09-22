@@ -9,11 +9,12 @@ var version = "0.1.9";
 var release_date = "September 10, 2013";
 var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3"];
 var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19"];
+var download_url_tmpl = hexo.config.project.download_url.replace(/{VERSION}/g, version);
 
 // functions
 function sourceforge_dl_url(file) {
-	return "http://sourceforge.net/projects/qwinff/files/release/v"
-		+ version + "/" + file.replace("{VERSION}", version) + "/download";
+	var filename = file.replace(/{VERSION}/g, version);
+	return download_url_tmpl.replace(/{FILE}/g, filename);
 }
 %>
 
