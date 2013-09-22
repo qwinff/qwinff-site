@@ -16,7 +16,7 @@ The git repository of QWinFF is hosted on [GitHub](http://github.com/qwinff).
 <img src="/img/dev/i18n.png">
 <div class="content">
 <h1>Translate</h1>
-Translation files of QWinFF are hosted at [Transifex](https://www.transifex.com/projects/p/qwinff/). In order to translate translate on Transifex, you have to [register for a Transifex account](https://www.transifex.com/signup/).
+Translation files of QWinFF are hosted at [Transifex](https://www.transifex.com/projects/p/qwinff/). In order to translate QWinFF on Transifex, you have to [register for a Transifex account](https://www.transifex.com/signup/).
 </div></div>
 
 <div class="icon-and-text">
