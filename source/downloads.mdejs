@@ -9,11 +9,13 @@ var version = "0.1.9";
 var release_date = "September 10, 2013";
 var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3"];
 var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19"];
+var download_url_tmpl = hexo.config.project.download_url.replace(/{VERSION}/g, version);
+var files = hexo.config.project.files;
 
 // functions
 function sourceforge_dl_url(file) {
-	return "http://sourceforge.net/projects/qwinff/files/release/v"
-		+ version + "/" + file.replace("{VERSION}", version) + "/download";
+	var filename = file.replace(/{VERSION}/g, version);
+	return download_url_tmpl.replace(/{FILE}/g, filename);
 }
 %>
 
@@ -32,13 +34,13 @@ The current version is <%= version %>, released on <%= release_date %>.
 
 <div class="distro"><div class="logo"><img src="/img/distro/tarball.png"></div><div class="content">
 <h1>Source Code</h1>
-[tar.bz2 format](<%= sourceforge_dl_url("qwinff_{VERSION}.tar.bz2") %>)
-[tar.gz format](<%= sourceforge_dl_url("qwinff_{VERSION}.tar.gz") %>)</div></div>
+[tar.bz2 format](<%= sourceforge_dl_url(files.tbz2) %>)
+[tar.gz format](<%= sourceforge_dl_url(files.tgz) %>)</div></div>
 
 <div class="distro"><div class="logo"><img src="/img/distro/windows.png"></div><div class="content">
 <h1>Windows</h1>
-[QWinFF Installer](<%= sourceforge_dl_url("qwinff_{VERSION}-setup.exe") %>): install QWinFF on your computer
-[QWinFF Portable](<%= sourceforge_dl_url("qwinff-portable-{VERSION}.7z") %>): Portable version that doesn't require installation (7zip archive)</div></div>
+[QWinFF Installer](<%= sourceforge_dl_url(files.w32_install) %>): install QWinFF on your computer
+[QWinFF Portable](<%= sourceforge_dl_url(files.w32_portable) %>): Portable version that doesn't require installation (7zip archive)</div></div>
 
 <div class="distro"><div class="logo"><img src="/img/distro/ubuntu.png"><br><img src="/img/distro/mint.png"></div><div class="content">
 <h1>Ubuntu/Mint</h1>
