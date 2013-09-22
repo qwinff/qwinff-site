@@ -5,7 +5,7 @@ og_desc: Download QWinFF
 
 <%
 // variables
-var version = "0.1.9";
+var version = hexo.config.project.version;
 var release_date = "September 10, 2013";
 var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3"];
 var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19"];
