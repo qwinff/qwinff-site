@@ -6,7 +6,6 @@ og_desc: Download QWinFF
 <%
 // variables
 var version = hexo.config.project.version;
-var release_date = "September 10, 2013";
 var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3"];
 var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19"];
 var download_url_tmpl = hexo.config.project.download_url.replace(/{VERSION}/g, version);
@@ -30,7 +29,7 @@ QWinFF depends on the following programs at runtime:
 - ffplay (optional, for previewing audio/video cutting)
 - sox (optional, for adjusting audio speed)
 
-The current version is <%= version %>, released on <%= release_date %>.
+The current version is <%= version %>.
 
 <div class="distro"><div class="logo"><img src="/img/distro/tarball.png"></div><div class="content">
 <h1>Source Code</h1>
