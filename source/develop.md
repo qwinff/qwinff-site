@@ -16,7 +16,7 @@ The git repository of QWinFF is hosted on [GitHub](http://github.com/qwinff).
 <img src="/img/dev/i18n.png">
 <div class="content">
 <h1>Translating</h1>
-See [Translate](translate.html)
+See [Translate](translate.html).
 </div></div>
 
 <div class="icon-and-text">
@@ -34,7 +34,7 @@ Currently, QWinFF is available only on GNU/Linux and Windows. If you are familia
 </div></div>
 
 <div class="icon-and-text">
-<img src="">
+<img src="/img/dev/doc.png">
 <div class="content">
 <h1>Writing Documentation</h1>
 User documentation of QWinFF is still work in progress. The source files are hosted on [GitHub](http://github.com/qwinff/qwinff-doc/). It is written using [Sphinx Documentation Generator](http://sphinx-doc.org/) and published using [GitHub Pages](http://pages.github.com/). You can contribute to its content by sending pull requests on GitHub.
