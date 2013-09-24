@@ -10,7 +10,6 @@ QWinFF also comes in handy when you need to make a video clip for a larger video
 
 QWinFF is written in Qt4/C++ and currently runs on GNU/Linux and Windows.
 
-QWinFF is free software licensed under [GPLv3](http://www.gnu.org/licenses/gpl.html). You can help this project by [translating](translate.html), [writing user documentation](https://github.com/qwinff/qwinff-doc) or packaging. Please see [Develop](develop.html) page for details.
+**QWinFF is free software licensed under [GPLv3](http://www.gnu.org/licenses/gpl.html)**. You can help this project by [translating](translate.html), [writing user documentation](https://github.com/qwinff/qwinff-doc) or packaging. Please see [Develop](develop.html) page for details.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) for more details.
-
