@@ -1,9 +1,8 @@
-<div class="alignleft">
+<div id="nav-logo">
   <a href="<%- config.root %>"><img src="/img/logo_256.png">
   <h1><%= config.title %></h1>
   <h2><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2></a>
 </div>
-<br>
 <nav id="main-nav">
     <% var canonical_path = function(p) {
          var result = p.replace(/\/index\.html$/g, ""); // no trailing index.html
