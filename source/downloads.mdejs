@@ -17,11 +17,24 @@ function sourceforge_dl_url(file) {
 	return download_url_tmpl.replace(/{FILE}/g, filename);
 }
 %>
-
 Downloads of QWinFF are hosted at SourceForge: https://sourceforge.net/projects/qwinff/files/.
 
 Translation files included in the release are sometimes out-of-date because they are frequently updated. You can download the latest translation files ([20130911](http://sourceforge.net/projects/qwinff/files/translation/qwinff-ts-20130911.zip)) and copy all the ``*.qm`` files to the translation file directory (typically /usr/share/qwinff/translations on GNU/Linux and C:\Program Files (x86)\QWinFF\translations on Windows).
 
+<div class="pullquote">
+<h1>Contents</h1>
+<ul>
+<li><a href="#tarball">Source Code</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#ubuntu">Ubuntu/Mint</a></li>
+<li><a href="#opensuse">openSUSE</a></li>
+<li><a href="#fedora">Fedora</a></li>
+<li><a href="#arch">Arch</a></li>
+<li><a href="#chakra">Chakra</a></li>
+<li><a href="#freebsd">FreeBSD</a></li>
+<li><a href="#os2">OS/2</a></li>
+</ul>
+</div>
 QWinFF depends on the following programs at runtime:
 
 - ffmpeg (required)
@@ -29,16 +42,19 @@ QWinFF depends on the following programs at runtime:
 - ffplay (optional, for previewing audio/video cutting)
 - sox (optional, for adjusting audio speed)
 
+<a id="tarball"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/tarball.png"></div><div class="content">
 <h1>Source Code</h1>
 [QWinFF <%= version %> Source Code](<%= sourceforge_dl_url(files.tbz2) %>) (tar.bz2)
 [QWinFF <%= version %> Source Code](<%= sourceforge_dl_url(files.tgz) %>) (tar.gz)</div></div>
 
+<a id="windows"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/windows.png"></div><div class="content">
 <h1>Windows</h1>
 [QWinFF <%= version %> Installer](<%= sourceforge_dl_url(files.w32_install) %>): install QWinFF on your computer
 [QWinFF <%= version %> Portable](<%= sourceforge_dl_url(files.w32_portable) %>): Portable version that doesn't require installation (7zip archive)</div></div>
 
+<a id="ubuntu"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/ubuntu.png"><br><img src="/img/distro/mint.png"></div><div class="content">
 <h1>Ubuntu/Mint</h1>
 PPA for QWinFF is available at https://launchpad.net/~lzh9102/+archive/qwinff. You can install from the ppa by the following command:
@@ -50,6 +66,7 @@ sudo apt-get install qwinff
 ```
 </div></div>
 
+<a id="opensuse"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/opensuse.png"></div><div class="content">
 <h1>openSUSE</h1>
 QWinFF packages for openSUSE are provided via openSUSE Build Service repositories. Supported releases are
@@ -67,7 +84,7 @@ sudo zypper install qwinff
 ```
 </div></div>
 
-
+<a id="fedora"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/fedora.png"></div><div class="content">
 <h1>Fedora</h1>
 QWinFF packages for Fedora are also available via openSUSE Build Service. The following releases are supported currently:
@@ -93,25 +110,25 @@ sudo yum install qwinff
 ```
 </div></div>
 
-
+<a id="arch"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/arch.png"></div><div class="content">
 <h1>Arch</h1>
 contents
 </div></div>
 
-
+<a id="chakra"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/chakra.png"></div><div class="content">
 <h1>Chakra</h1>
 contents
 </div></div>
 
-
+<a id="freebsd"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/freebsd.png"></div><div class="content">
 <h1>FreeBSD</h1>
 contents
 </div></div>
 
-
+<a id="os2"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/os2.png"></div><div class="content">
 <h1>OS/2</h1>
 contents
