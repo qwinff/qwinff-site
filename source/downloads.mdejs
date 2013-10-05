@@ -92,3 +92,27 @@ sudo yum-config-manager --add-repo \
 sudo yum install qwinff
 ```
 </div></div>
+
+
+<div class="distro"><div class="logo"><img src="/img/distro/arch.png"></div><div class="content">
+<h1>Arch</h1>
+contents
+</div></div>
+
+
+<div class="distro"><div class="logo"><img src="/img/distro/chakra.png"></div><div class="content">
+<h1>Chakra</h1>
+contents
+</div></div>
+
+
+<div class="distro"><div class="logo"><img src="/img/distro/freebsd.png"></div><div class="content">
+<h1>FreeBSD</h1>
+contents
+</div></div>
+
+
+<div class="distro"><div class="logo"><img src="/img/distro/os2.png"></div><div class="content">
+<h1>OS/2</h1>
+contents
+</div></div>
