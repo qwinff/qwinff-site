@@ -1,6 +1,6 @@
 #header
   align left
-  width 215px /* 240 - padding-left */
+  width 225px /* 240 - padding-left */
   right 240px
   margin-left -240px
   min-height 100%
@@ -42,32 +42,35 @@
     float left
     list-style none
     a
-      width 90%
+      width 87.5%
       position relative
       display block
       padding 5px 0 5px 60px
       text-shadow none
       &:hover 
-        text-shadow 0 0 0.3em #888, 0 0 0.1em #333
+        border 1px solid rgb(221,221,221)
+        margin -1px
     .actived_nav
-      width 90%
+      width 88%
       display block
       padding 5px 0 5px 60px
-      color #000
-      background-color rgba(200,200,200,0.2)
-      border-right 1px solid #ccc
+      color #fff
+      background-color rgb(200,200,200)
+      box-shadow -2px 0 5px #ccc
     .sub-level
       background-color rgba(255,255,255,0.2)
       list-style-type none
       padding-bottom 10px
-      width 123.5%
-      border-right 1px solid #ccc
+      width 119%
+      border-right 1px solid rgb(221,221,221)
+      box-shadow inset 3px 0 8px rgb(200,200,200)
+      background-image url('/img/45line.png')
       a
         font-size 0.8em
         padding-left 80px
         line-height 1em
-        color #fff
-        width 65.5%
+        color #999
+        width 63%
         &:hover
           text-shadow none
           background-color rgba(255,255,255,0.3)
