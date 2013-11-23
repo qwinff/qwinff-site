@@ -20,6 +20,10 @@
          return head + "href=\"" + url + "\">" + link_text + "</a>";
        }
     %>
+    <% var download_submenu_class = "sublevel";
+       if (canonical_path(config.root + path) == "/downloads.html")
+         download_submenu_class = "sublevel-active";
+    %>
     <% for (var i in theme.menu){ %>
       <% if (canonical_path(theme.menu[i]) == canonical_path(config.root + path)) { %>
         <span class="actived_nav"><%= i %></span>
@@ -27,7 +31,7 @@
         <%- format_link(theme.menu[i], i) %>
       <% } %>
       <% if (theme.menu[i] == "/downloads.html") { %>
-          <div class="sub-level">
+          <div class="<%- download_submenu_class %>">
           <a class="tarball" href="#tarball">Source Code</a>
           <a class="windows" href="#windows">Windows</a>
           <a class="ubuntu" href="#ubuntu">Ubuntu/Mint</a>
