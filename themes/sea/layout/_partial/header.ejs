@@ -23,21 +23,21 @@
     <% for (var i in theme.menu){ %>
       <% if (canonical_path(theme.menu[i]) == canonical_path(config.root + path)) { %>
         <span class="actived_nav"><%= i %></span>
-        <% if (theme.menu[i] == "/downloads.html") { %>
-	<div class="sub-level">
-                <a class="tarball" href="#tarball">Source Code</a>
-                <a class="windows" href="#windows">Windows</a>
-                <a class="ubuntu" href="#ubuntu">Ubuntu/Mint</a>
-                <a class="opensuse" href="#opensuse">openSUSE</a>
-		<a class="fedora" href="#fedora">Fedora</a>
-		<a class="arch" href="#arch">Arch</a>
-		<a class="chakra" href="#chakra">Chakra</a>
-		<a class="freebsd" href="#freebsd">FreeBSD</a>
-		<a class="os2" href="#os2">OS/2</a>
-            </div>
-        <% } %>
       <% } else { %>
         <%- format_link(theme.menu[i], i) %>
+      <% } %>
+      <% if (theme.menu[i] == "/downloads.html") { %>
+          <div class="sub-level">
+          <a class="tarball" href="#tarball">Source Code</a>
+          <a class="windows" href="#windows">Windows</a>
+          <a class="ubuntu" href="#ubuntu">Ubuntu/Mint</a>
+          <a class="opensuse" href="#opensuse">openSUSE</a>
+          <a class="fedora" href="#fedora">Fedora</a>
+          <a class="arch" href="#arch">Arch</a>
+          <a class="chakra" href="#chakra">Chakra</a>
+          <a class="freebsd" href="#freebsd">FreeBSD</a>
+          <a class="os2" href="#os2">OS/2</a>
+          </div>
       <% } %>
     <% } %>
 </nav>
