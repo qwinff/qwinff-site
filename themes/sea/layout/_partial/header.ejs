@@ -10,38 +10,36 @@
          result = result.replace("//", "/"); // no consecutive /
          return result;
        }
-       var format_link = function(url, link_text) {
-         var head;
-         if (url.charAt(0) == '/') { // internal link
-           head = "<a ";
-         } else { // external link
-           head = "<a class=\"external\" ";
-         }
-         return head + "href=\"" + url + "\">" + link_text + "</a>";
-       }
-    %>
-    <% var download_submenu_class = "sublevel";
+
+       var download_submenu_class = "sublevel";
        if (canonical_path(config.root + path) == "/downloads.html")
-         download_submenu_class = "sublevel-active";
+         download_submenu_class = "sublevel-active"; 
+
+       var generate_menuitem = function(url, link_text, is_current) {
+         var html = '<div class="menuitem">';
+         if (is_current)
+           html += '<span class="actived_nav">' + link_text + '</span>';
+         else
+           html += '<a href="' + url + '">' + link_text + '</a>';
+         if (url == "/downloads.html") {
+            html += '<div class="' + download_submenu_class + '">';
+            html += '<a class="tarball" href="#tarball">Source Code</a>';
+            html += '<a class="windows" href="#windows">Windows</a>';
+            html += '<a class="ubuntu" href="#ubuntu">Ubuntu/Mint</a>';
+            html += '<a class="opensuse" href="#opensuse">openSUSE</a>';
+            html += '<a class="fedora" href="#fedora">Fedora</a>';
+            html += '<a class="arch" href="#arch">Arch</a>';
+            html += '<a class="chakra" href="#chakra">Chakra</a>';
+            html += '<a class="freebsd" href="#freebsd">FreeBSD</a>';
+            html += '<a class="os2" href="#os2">OS/2</a>';
+            html += '</div>';
+         }
+         html += '</div>';
+         return html;
+       };
     %>
-    <% for (var i in theme.menu){ %>
-      <% if (canonical_path(theme.menu[i]) == canonical_path(config.root + path)) { %>
-        <span class="actived_nav"><%= i %></span>
-      <% } else { %>
-        <%- format_link(theme.menu[i], i) %>
-      <% } %>
-      <% if (theme.menu[i] == "/downloads.html") { %>
-          <div class="<%- download_submenu_class %>">
-          <a class="tarball" href="#tarball">Source Code</a>
-          <a class="windows" href="#windows">Windows</a>
-          <a class="ubuntu" href="#ubuntu">Ubuntu/Mint</a>
-          <a class="opensuse" href="#opensuse">openSUSE</a>
-          <a class="fedora" href="#fedora">Fedora</a>
-          <a class="arch" href="#arch">Arch</a>
-          <a class="chakra" href="#chakra">Chakra</a>
-          <a class="freebsd" href="#freebsd">FreeBSD</a>
-          <a class="os2" href="#os2">OS/2</a>
-          </div>
-      <% } %>
+    <% for (var i in theme.menu) { %>
+      <% var is_current = (canonical_path(theme.menu[i]) == canonical_path(config.root + path)); %>
+      <%- generate_menuitem(theme.menu[i], i, is_current) %>
     <% } %>
 </nav>
