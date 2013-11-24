@@ -1,10 +1,11 @@
-title: QWinFF 0.1.9 released 
+title: QWinFF 0.1.9 released
 date: 2013-09-10 14:27:52
 tags: change log
 ---
 Version 0.1.9 (2013-09-10)
-
-- Added output formats: asf, swf, aiff, flac, au, mp2
+[add]
+[fixed]
+- [add] output formats: asf, swf, aiff, flac, au, mp2
 - Added more output path options.
 - Added update checker.
 - Automatically start conversion after adding files (off by default)
@@ -18,5 +19,5 @@ Version 0.1.9 (2013-09-10)
 - (Packaging) Added file "constants.xml".
 - (Packaging) (Windows) Place Qt translation files in "translations" folder
 - (Packaging) (Windows) QWinFF now depends on QtNetwork4?.dll (for update checker).
-- (Packaging) (Windows) merge "ffmpeg" and "sox" folder into "tools" folder 
+- (Packaging) (Windows) merge "ffmpeg" and "sox" folder into "tools" folder
 

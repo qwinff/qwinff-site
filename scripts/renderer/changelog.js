@@ -1,21 +1,21 @@
 /* Highlight labels in changelog in markdown format
  * process: input.changelog -> highlight labels -> markdown -> output.html
  */
-
+// [tag,color,bg-color]
 var changelog_labels = [
-	["add", '#00ff00'],
-	["fixed", '#ff0000'],
+	["add", '#688E1C', '#C6F26F'],
+	["fixed", '#aa0000', '#ffbbbb'],
 	[], // do not remove this line
 ];
 
-var highlight_label = function(text, label, color) {
+var highlight_label = function(text, label, color, bgcolor) {
 	var pattern = '[' + label + ']';
-	return text.replace(pattern, '<span style="color:' + color + '">' + pattern + '</span>');
+	return text.replace(pattern, '<span style=\'color:' + color + ';background-color:' + bgcolor + ';padding:1px 2px;border-radius:2px;font-weight:bold;text-transform:capitalize;\'>' + pattern + '</span>');
 }
 
 var highlight_article = function(text) {
 	for (var i=0; i<changelog_labels.length-1; i++) {
-		text = highlight_label(text, changelog_labels[i][0], changelog_labels[i][1]);
+		text = highlight_label(text, changelog_labels[i][0], changelog_labels[i][1], changelog_labels[i][2]);
 	}
 	return text;
 }
