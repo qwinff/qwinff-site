@@ -21,26 +21,9 @@ Downloads of QWinFF are hosted at SourceForge: https://sourceforge.net/projects/
 
 Translation files included in the release are sometimes out-of-date because they are frequently updated. You can download the latest translation files ([20130911](http://sourceforge.net/projects/qwinff/files/translation/qwinff-ts-20130911.zip)) and copy all the ``*.qm`` files to the translation file directory (typically /usr/share/qwinff/translations on GNU/Linux and C:\Program Files (x86)\QWinFF\translations on Windows).
 
-<div class="pullquote">
-<h1>Contents</h1>
-<ul>
-<li><a href="#tarball">Source Code</a></li>
-<li><a href="#windows">Windows</a></li>
-<li><a href="#ubuntu">Ubuntu/Mint</a></li>
-<li><a href="#opensuse">openSUSE</a></li>
-<li><a href="#fedora">Fedora</a></li>
-<li><a href="#arch">Arch</a></li>
-<li><a href="#chakra">Chakra</a></li>
-<li><a href="#freebsd">FreeBSD</a></li>
-<li><a href="#os2">OS/2</a></li>
-</ul>
-</div>
-QWinFF depends on the following programs at runtime:
+**QWinFF depends on the following programs at runtime:**
 
-- ffmpeg (required)
-- ffprobe (required)
-- ffplay (optional, for previewing audio/video cutting)
-- sox (optional, for adjusting audio speed)
+<div style='background-color:#E8F1F4;display:block;padding:7px 15px;border-radius:2px;border:1px solid #A8DBEA;margin-top:15px;font-family:Monaco,Menlo,Consolas,Courier New,monospace;color:#3E93AD'><ul><li>ffmpeg (required)</li><li>ffprobe (required)</li><li>ffplay (optional, for previewing audio/video cutting)</li><li>sox (optional, for adjusting audio speed)</li></ul></div>
 
 <a id="tarball"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/tarball.png"></div><div class="content">
