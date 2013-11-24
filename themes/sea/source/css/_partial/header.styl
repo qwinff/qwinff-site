@@ -59,7 +59,7 @@
       border-bottom 1px solid rgb(221,221,221)
       background-color rgba(255,255,255,1)
       margin -1px 0
-    .sub-level
+    .sublevel-active
       background-color rgba(150,150,150,0.1)
       list-style-type none
       padding-bottom 10px
@@ -104,6 +104,60 @@
        a.os2
          &:hover
            border-right 5px solid #181415
+    .sublevel
+      display none
+    .menuitem 
+      &:hover > .sublevel
+        position absolute
+        float left
+        left 119.5%
+        margin-top -2.57em
+        z-index 999
+        display block
+        background-color rgba(255,255,255,1)
+        padding-bottom 10px
+        width 114.3%
+        border-right 5px solid #ddd
+        box-shadow 3px 3px 8px #aaa
+        background-image url('/img/line45.png')
+        a
+          z-index 999
+          font-size 0.8em
+          padding-left 80px
+          line-height 1em
+          color #999
+          width 63%
+          &:hover
+            text-shadow none
+            background-color rgba(0,0,0,0.32)
+            color #fff
+         a.tarball
+           &:hover
+             border-right 5px solid #d8a048
+         a.windows
+           &:hover
+             border-right 5px solid #11B9F5
+         a.ubuntu
+           &:hover
+             border-right 5px solid #f47421
+         a.opensuse
+           &:hover
+             border-right 5px solid #AAD33F
+         a.fedora
+           &:hover
+             border-right 5px solid #294172
+         a.arch
+           &:hover
+             border-right 5px solid #1793D1
+         a.chakra
+           &:hover
+             border-right 5px solid #568EDF
+         a.freebsd
+           &:hover
+             border-right 5px solid #E01C02
+         a.os2
+           &:hover
+             border-right 5px solid #181415
         
 
 #nav-logo
