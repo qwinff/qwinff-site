@@ -14,7 +14,7 @@ var highlight_label = function(text, label) {
 	var re = new RegExp('\\[' + label + '\\]', 'g');
 	var class_name = "changelog-tag-" + label.toLowerCase();
 	return text.replace(re, '<span class="changelog-tag ' + class_name + '">'
-			+ label.toUpperCase()
+			+ label
 			+ '</span>');
 }
 
