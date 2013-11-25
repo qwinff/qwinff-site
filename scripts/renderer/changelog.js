@@ -6,7 +6,7 @@
 // Labels can only contain alphabets, numbers, underscore and hyphen and must
 // not begin with a number.
 var changelog_labels = [
-	"Added",
+	"Feature",
 	"Fixed",
     "General",
     "Windows",

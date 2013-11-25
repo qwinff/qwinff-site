@@ -4,16 +4,16 @@ tags: change log
 qwinff_release: 19
 ---
 Version 0.1.9 (2013-09-10)
-- [Added] Output formats: asf, swf, aiff, flac, au, mp2
-- [Added] More output path options.
-- [Added] Update checker.
+- [Feature] Output formats: asf, swf, aiff, flac, au, mp2
+- [Feature] [UI] Update checker.
+- [Feature] [UI] More output path options.
 - [UI] Automatically start conversion after adding files (off by default)
 - [UI] Minor UI improvements
-- [General] Several program parameters can be set in constants.xml.
+- [General]  Several program parameters can be set in constants.xml.
 - [General] Can now set version-specific ffmpeg parameters in presets.xml.
-- [General] Compatible with newer ffmpeg versions ("-sameq" doesn't work since ffmpeg 1.2).
 - [Windows] Dialog buttons are now also translated.
 - [Linux] User can now change ffmpeg and sox executable paths in the Options dialog.
+- [Packaging] Compatible with newer ffmpeg versions ("-sameq" doesn't work since ffmpeg 1.2).
 - [Packaging] Support older Qt versions down to 4.4.3.
 - [Packaging] Added file "constants.xml".
 - [Packaging] [Windows] Place Qt translation files in "translations" folder
