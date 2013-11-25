@@ -8,6 +8,12 @@
 var changelog_labels = [
 	"Add",
 	"Fixed"
+    "General"
+    "Windows"
+    "Linux"
+    "Packaging"
+    "UI"
+    "Improve"
 ];
 
 var highlight_label = function(text, label) {
