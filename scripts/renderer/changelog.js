@@ -10,7 +10,7 @@ var changelog_labels = [
 var highlight_label = function(text, label) {
 	var re = new RegExp('\\[' + label + '\\]', 'g');
 	var class_name = "changelog-tag-" + label;
-	return text.replace(re, '<span class="' + class_name + '">'
+	return text.replace(re, '<span class="changelog-tag ' + class_name + '">'
 			+ '[' + label.toUpperCase() + ']'
 			+ '</span>');
 }
