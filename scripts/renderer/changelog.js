@@ -10,7 +10,8 @@ var changelog_labels = [
 
 var highlight_label = function(text, label, color, bgcolor) {
 	var pattern = '[' + label + ']';
-	return text.replace(pattern, '<span style=\'color:' + color + ';background-color:' + bgcolor + ';padding:1px 2px;border-radius:2px;font-weight:bold;text-transform:capitalize;\'>' + pattern + '</span>');
+	var re = new RegExp('\\[' + label + '\\]', 'g');
+	return text.replace(re, '<span style=\'color:' + color + ';background-color:' + bgcolor + ';padding:1px 2px;border-radius:2px;font-weight:bold;text-transform:capitalize;\'>' + pattern + '</span>');
 }
 
 var highlight_article = function(text) {
