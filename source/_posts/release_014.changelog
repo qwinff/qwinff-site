@@ -5,5 +5,5 @@ tags: change log
 Version 0.1.4
 (2012-06-21)
 
-- Some minor gui improvements
-- Include desktop file and application icon in installation. 
+- [UI] Some minor GUI improvements.
+- [Packaging] Include desktop file and application icon in installation.

@@ -13,7 +13,7 @@ var changelog_labels = [
     "Linux",
     "Packaging",
     "UI",
-    "Improve"
+    "I18n"
 ];
 
 var highlight_label = function(text, label) {

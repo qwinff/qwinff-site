@@ -5,5 +5,5 @@ tags: change log
 Version 0.1.7
 (2012-09-17)
 
-- Drag&Drop reordering tasks
-- Fixed progress-displaying of wav input files. 
+- [Feature] [UI] Drag&Drop reordering tasks
+- [Fixed] progress-displaying of wav input files. 

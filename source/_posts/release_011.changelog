@@ -5,7 +5,8 @@ tags: change log
 Version 0.1.1
 (2012-02-07)
 
-- Use libnotify for desktop notification.
-- Separate preset file for each user.
-- Save program settings and the user preset file in ~/.qwinff/
-- Added Japanese translation. 
+- [I18n] Added Japanese translation.
+- [General] Use libnotify for desktop notification.
+- [General] Separate preset file for each user.
+- [General] Save program settings and the user preset file in ~/.qwinff/
+

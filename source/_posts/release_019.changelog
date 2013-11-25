@@ -4,6 +4,7 @@ tags: change log
 qwinff_release: 19
 ---
 Version 0.1.9 (2013-09-10)
+
 - [Feature] Output formats: asf, swf, aiff, flac, au, mp2
 - [Feature] [UI] Update checker.
 - [Feature] [UI] More output path options.

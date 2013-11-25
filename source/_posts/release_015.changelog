@@ -5,6 +5,6 @@ tags: change log
 Version 0.1.5
 (2012-08-17)
 
-- New Feature: Shutdown computer when all tasks are done.
-- Added Italian translation.
-- Added several ffmpeg presets that don't give extra arguments. 
+- [Feature] Shutdown computer when all tasks are done.
+- [I18n] Italian translation.
+- [General] Several ffmpeg presets that don't give extra arguments.
