@@ -2,6 +2,9 @@
  * process: input.changelog -> highlight labels -> markdown -> output.html
  */
 
+// list of labels to replace
+// Labels can only contain alphabets, numbers, underscore and hyphen and must
+// not begin with a number.
 var changelog_labels = [
 	"add",
 	"fixed"
