@@ -10,11 +10,25 @@ var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3"];
 var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19"];
 var download_url_tmpl = hexo.config.project.download_url.replace(/{VERSION}/g, version);
 var files = hexo.config.project.files;
+var runtime_dependencies = [
+	"ffmpeg (required)",
+	"ffprobe (required)",
+	"ffplay (optional, for previewing audio/video cutting)",
+	"sox (optional, for adjusting audio speed)"
+];
 
 // functions
 function sourceforge_dl_url(file) {
 	var filename = file.replace(/{VERSION}/g, version);
 	return download_url_tmpl.replace(/{FILE}/g, filename);
+}
+function generate_runtime_dependency_list() {
+	var list = ["<ul>"];
+	runtime_dependencies.forEach(function(item) {
+		list.push("<li>" + item + "</li>");
+	});
+	list.push("</ul>");
+	return list.join("");
 }
 %>
 Downloads of QWinFF are hosted at SourceForge: https://sourceforge.net/projects/qwinff/files/.
@@ -23,7 +37,7 @@ Translation files included in the release are sometimes out-of-date because they
 
 **QWinFF depends on the following programs at runtime:**
 
-<div style='background-color:#E8F1F4;display:block;padding:7px 15px;border-radius:2px;border:1px solid #A8DBEA;margin-top:15px;font-family:Monaco,Menlo,Consolas,Courier New,monospace;color:#3E93AD'><ul><li>ffmpeg (required)</li><li>ffprobe (required)</li><li>ffplay (optional, for previewing audio/video cutting)</li><li>sox (optional, for adjusting audio speed)</li></ul></div>
+<div style='background-color:#E8F1F4;display:block;padding:7px 15px;border-radius:2px;border:1px solid #A8DBEA;margin-top:15px;font-family:Monaco,Menlo,Consolas,Courier New,monospace;color:#3E93AD'><%-generate_runtime_dependency_list()%></div>
 
 <a id="tarball"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/tarball.png"></div><div class="content">
