@@ -20,7 +20,6 @@ og_desc: Convert your media files easily
 project:
   version: 0.1.9
   github: http://github.com/qwinff/qwinff
-  updateinfo_xml: latest.xml
   download_page: downloads.html
   download_url: http://sourceforge.net/projects/qwinff/files/release/v{VERSION}/{FILE}/download
   files:
