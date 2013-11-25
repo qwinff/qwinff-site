@@ -6,13 +6,13 @@
 // Labels can only contain alphabets, numbers, underscore and hyphen and must
 // not begin with a number.
 var changelog_labels = [
-	"Add",
-	"Fixed"
-    "General"
-    "Windows"
-    "Linux"
-    "Packaging"
-    "UI"
+	"Added",
+	"Fixed",
+    "General",
+    "Windows",
+    "Linux",
+    "Packaging",
+    "UI",
     "Improve"
 ];
 
