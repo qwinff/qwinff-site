@@ -6,15 +6,15 @@
 // Labels can only contain alphabets, numbers, underscore and hyphen and must
 // not begin with a number.
 var changelog_labels = [
-	"add",
-	"fixed"
+	"Add",
+	"Fixed"
 ];
 
 var highlight_label = function(text, label) {
 	var re = new RegExp('\\[' + label + '\\]', 'g');
-	var class_name = "changelog-tag-" + label;
+	var class_name = "changelog-tag-" + label.toLowerCase();
 	return text.replace(re, '<span class="changelog-tag ' + class_name + '">'
-			+ '[' + label.toUpperCase() + ']'
+			+ label.toUpperCase()
 			+ '</span>');
 }
 

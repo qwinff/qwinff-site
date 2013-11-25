@@ -4,9 +4,9 @@ tags: change log
 qwinff_release: 19
 ---
 Version 0.1.9 (2013-09-10)
-[add]
-[fixed]
-- [add] output formats: asf, swf, aiff, flac, au, mp2
+[Add]
+[Fixed]
+- [Add] output formats: asf, swf, aiff, flac, au, mp2
 - Added more output path options.
 - Added update checker.
 - Automatically start conversion after adding files (off by default)
