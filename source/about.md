@@ -4,7 +4,6 @@ og_desc: About QWinFF
 ---
 
 QWinFF is developed and maintained by [Timothy Lin](mailto:lzh9102@gmail.com)
-
 QWinFF Logo and related artworks are created by [kuanyui](http://kuanyui.github.io/).
 
 # Translators
