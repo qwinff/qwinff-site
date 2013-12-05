@@ -7,8 +7,7 @@ QWinFF is developed and maintained by [Timothy Lin](mailto:lzh9102@gmail.com)
 
 QWinFF Logo and related artworks are created by [kuanyui](http://kuanyui.github.io/).
 
-Translators
------------
+# Translators
 
 - Japanese translation by [Tilt](http://tiltstr.seesaa.net/)
 - Italian translation by [TheJoe](http://thejoe.it) and Francesco Marinucci
@@ -19,3 +18,7 @@ Translators
 - Romanian translation by SymbianFlo
 - Turkish translation by Mustafa Kılıç
 - Arabic translation by Mohammed Ali
+
+# Porting
+
+- QWinFF for **OS/2** & **eComStation** by [Gianfilippo Cimmino](mailto:gianfli.cim@gmail.com)
