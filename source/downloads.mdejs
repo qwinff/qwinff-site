@@ -127,7 +127,8 @@ To install QWinff on OS/2 or eCS, requirements:
 
 <ul><li><a href="ftp://ftp.netlabs.org/pub/qt4/4.7.3/qt4-4.7.3-1.zip">Qt Runtime Library</a></li><li><a href="ftp://ftp.netlabs.org/pub/gcc/libc-0.6.5-csd5.zip">kLIBC / GCC Runtime Library</a></li><li><a href="http://hobbes.nmsu.edu/h-search.php?key=ffmpeg&pushbutton=Search">FFmpeg</a> (any version should works, better latest)</li><li><a href="http://hobbes.nmsu.edu/download/pub/os2/apps/mmedia/sound/convert/sox_14_2_0.zip">SoX</a> (tested only with this version)</li></ul>
 All this packages (dynamic libs and executables) need to be simply in `LIBPATH` and in `PATH` statements of the OS/2 or eCS `CONFIG.SYS` file.
-It is possible then to put a "shadow" on the desktop or where you desire, or simply run `qwinff.exe` into an OS/2 command line window, if also `qwinff.exe` is in path (not necessary).
+
+It is possible then to put a "*shadow*" (similar to a link for unix systems) on the desktop or where user desire, double-click on icon, or simply run `qwinff.exe` into an OS/2 command line window.
 
 The runtimes above can be also installed via `rpm` and `yum`, but those are only for eComStation and are still in develop-stage (also the repository),you can get more infomation on <a href="http://trac.netlabs.org/rpm/wiki">this wiki</a>.
 </div></div>
