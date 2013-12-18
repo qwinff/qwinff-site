@@ -17,6 +17,7 @@ QWinFF Logo and related artworks are created by [kuanyui](http://kuanyui.github.
 - Romanian translation by SymbianFlo
 - Turkish translation by Mustafa Kılıç
 - Arabic translation by Mohammed Ali
+- Hungarian translation by András Földi
 
 # Porting
 
