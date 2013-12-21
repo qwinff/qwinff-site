@@ -123,12 +123,12 @@ sudo yum install qwinff
 <a id="os2"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/os2.png"></div><div class="content">
 <h1>OS/2 & eCS</h1>QWinFF for OS/2 & eCS(eComStation) is now available <b><a href="http://hobbes.nmsu.edu/h-search.php?key=qwinff">here.</a></b>
-To install QWinff on OS/2 or eCS, requirements:
+To install QWinFF on OS/2 or eCS, the required packages are:
 
-<ul><li><a href="ftp://ftp.netlabs.org/pub/qt4/4.7.3/qt4-4.7.3-1.zip">Qt Runtime Library</a></li><li><a href="ftp://ftp.netlabs.org/pub/gcc/libc-0.6.5-csd5.zip">kLIBC / GCC Runtime Library</a></li><li><a href="http://hobbes.nmsu.edu/h-search.php?key=ffmpeg&pushbutton=Search">FFmpeg</a> (any version should works, better latest)</li><li><a href="http://hobbes.nmsu.edu/download/pub/os2/apps/mmedia/sound/convert/sox_14_2_0.zip">SoX</a> (tested only with this version)</li></ul>
-All this packages (dynamic libs and executables) need to be simply in `LIBPATH` and in `PATH` statements of the OS/2 or eCS `CONFIG.SYS` file.
+<ul><li><a href="ftp://ftp.netlabs.org/pub/qt4/4.7.3/qt4-4.7.3-1.zip">Qt Runtime Library</a></li><li><a href="ftp://ftp.netlabs.org/pub/gcc/libc-0.6.5-csd5.zip">kLIBC / GCC Runtime Library</a></li><li><a href="http://hobbes.nmsu.edu/h-search.php?key=ffmpeg&pushbutton=Search">FFmpeg</a> (any version should work)</li><li><a href="http://hobbes.nmsu.edu/download/pub/os2/apps/mmedia/sound/convert/sox_14_2_0.zip">SoX</a> (tested only with this version)</li></ul>
+All these packages (dynamic libs and executables) need to be in `LIBPATH` and in `PATH` statements of the OS/2 or eCS `CONFIG.SYS` file.
 
-It is possible then to put a "*shadow*" (similar to a link for unix systems) on the desktop or where user desire, double-click on icon, or simply run `qwinff.exe` into an OS/2 command line window.
+It is possible then to put a "*shadow*" (similar to a link for unix systems) on the desktop or where the user desires. To start QWinFF, Double-click on the icon, or simply run `qwinff.exe` in an OS/2 command line window.
 
-The runtimes above can be also installed via `rpm` and `yum`, but those are only for eComStation and are still in develop-stage (also the repository),you can get more infomation on <a href="http://trac.netlabs.org/rpm/wiki">this wiki</a>.
+The runtimes listed above can be also installed via `rpm` and `yum`, but those are only for eComStation and are still in development-stage (also the repository), you can get more infomation on <a href="http://trac.netlabs.org/rpm/wiki">this wiki</a>.
 </div></div>
