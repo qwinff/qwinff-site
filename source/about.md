@@ -21,3 +21,7 @@ QWinFF Logo and related artworks are created by [kuanyui](http://kuanyui.github.
 # Porting
 
 - QWinFF for **OS/2** & **eComStation** by [Gianfilippo Cimmino](mailto:gianfli.cim@gmail.com)
+
+# Special Thanks
+
+- 2013's QWinFF kanban musume is drawn by [Ye Llow](http://www.pixiv.net/member.php?id=3608176&lang=zh).

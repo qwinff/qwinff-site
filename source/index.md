@@ -13,3 +13,5 @@ QWinFF is written in Qt4/C++ and currently runs on GNU/Linux and Windows. You ca
 **QWinFF is free software licensed under [GPLv3](http://www.gnu.org/licenses/gpl.html)**. You can help this project by [translating](translate.html), [writing user documentation](https://github.com/qwinff/qwinff-doc) or packaging. Please see [Develop](develop.html) page for details.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) for more details.
+
+<img src="/img/moe/qwinff_2013.jpg">
