@@ -32,6 +32,18 @@ var get_download_url = function(file, version) {
 	return download_url_tmpl.replace(/{FILE}/g, filename);
 }
 
+// remove <span></span> from html
+var remove_span = function(html) {
+	return html.replace(/<span [^<]*<\/span>/g, '');
+}
+
+// make html render correct in qt
+var fix_html = function(html) {
+	var result = remove_span(html);
+	result = result.replace(/[“”]/g, '"');
+	return result;
+}
+
 var generate_updateinfo = function(post, locals) {
 	var config = hexo.config;
 	var release_id = post.qwinff_release;
@@ -49,7 +61,7 @@ var generate_updateinfo = function(post, locals) {
 			 "<VersionId>" + release_id + "</VersionId>",
 			 "<ReleaseDate>" + release_date + "</ReleaseDate>",
 			 "<ReleaseNotes type=\"text/html\"><![CDATA[",
-			 release_notes,
+			 fix_html(release_notes),
 			 "]]></ReleaseNotes>",
 			 "<DownloadPage>" + download_page + "</DownloadPage>",
 			 "<DownloadLinks>",
