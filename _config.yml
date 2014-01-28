@@ -101,4 +101,5 @@ plugins:
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
-  type:
+  type: github
+  repository: https://github.com/qwinff/qwinff.github.io.git
