@@ -25,7 +25,7 @@ addthis:
   facebook: true
   twitter: true
   google: true
-  pinterest: true
+  pinterest: false
 
 fancybox: true
 
