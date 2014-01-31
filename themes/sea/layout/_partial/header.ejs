@@ -1,3 +1,19 @@
+<%
+/* os/distro to be listed in the left sidebar
+ * id: "label"
+ */
+var distro_list = {
+  tarball: "Source Code",
+  windows: "Windows",
+  ubuntu: "Ubuntu/Mint",
+  opensuse: "openSUSE",
+  fedora: "Fedora",
+  arch: "Arch",
+  chakra: "Chakra",
+  freebsd: "FreeBSD",
+  os2: "OS/2",
+};
+%>
 <div id="nav-logo">
   <a href="<%- config.root %>"><img src="/img/logo_256.png">
   <h1><%= config.title %></h1>
@@ -23,15 +39,12 @@
            html += '<a href="' + url + '">' + link_text + '</a>';
          if (url == "/downloads.html") {
             html += '<div class="' + download_submenu_class + '">';
-            html += '<a class="tarball" href="/downloads.html#tarball">Source Code</a>';
-            html += '<a class="windows" href="/downloads.html#windows">Windows</a>';
-            html += '<a class="ubuntu" href="/downloads.html#ubuntu">Ubuntu/Mint</a>';
-            html += '<a class="opensuse" href="/downloads.html#opensuse">openSUSE</a>';
-            html += '<a class="fedora" href="/downloads.html#fedora">Fedora</a>';
-            html += '<a class="arch" href="/downloads.html#arch">Arch</a>';
-            html += '<a class="chakra" href="/downloads.html#chakra">Chakra</a>';
-            html += '<a class="freebsd" href="/downloads.html#freebsd">FreeBSD</a>';
-            html += '<a class="os2" href="/downloads.html#os2">OS/2</a>';
+            for (var id in distro_list) {
+              // list each distro and display it in a link
+              var label = distro_list[id];
+              html += '<a class="' + id + '"' +
+                      'href="/downloads.html#' + id + '">' + label + '</a>';
+            }
             html += '</div>';
          }
          html += '</div>';
