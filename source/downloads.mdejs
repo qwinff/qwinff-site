@@ -7,8 +7,8 @@ og_desc: Download QWinFF
 // variables
 var version = hexo.config.project.version;
 var release_date = hexo.config.project.release_date;
-var opensuse_releases = ["openSUSE 12.1", "openSUSE 12.2", "openSUSE 12.3", "openSUSE 13.1"];
-var fedora_releases = ["Fedora 17", "Fedora 18", "Fedora 19", "Fedora 20"];
+var opensuse_releases = ["openSUSE 13.1", "openSUSE 12.3", "openSUSE 12.2", "openSUSE 12.1"];
+var fedora_releases = ["Fedora 20", "Fedora 19", "Fedora 18", "Fedora 17"];
 var download_url_tmpl = hexo.config.project.download_url.replace(/{VERSION}/g, version);
 var files = hexo.config.project.files;
 var runtime_dependencies = [
