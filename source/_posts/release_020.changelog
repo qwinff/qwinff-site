@@ -1,0 +1,15 @@
+title: QWinFF 0.2.0 released
+date: 2014-02-09 23:32:00
+tags: changelog
+qwinff_release: 20
+---
+Version 0.2.0 (2014-02-09)
+
+- Use avconv if ffmpeg is not available (experimental)
+- Added a video-cutting dialog with embedded mplayer.
+- Use embedded mplayer to preview video-cutting.
+- Recursively add files when a folder is dragged in.
+- Fixed default presets for AVI
+- Added application icon for OS/2 Warp.
+- Switched to Tango icon theme.
+
