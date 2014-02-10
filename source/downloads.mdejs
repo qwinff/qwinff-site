@@ -11,6 +11,7 @@ var opensuse_releases = ["openSUSE 13.1", "openSUSE 12.3", "openSUSE 12.2", "ope
 var fedora_releases = ["Fedora 20", "Fedora 19", "Fedora 18", "Fedora 17"];
 var download_url_tmpl = hexo.config.project.download_url.replace(/{VERSION}/g, version);
 var files = hexo.config.project.files;
+var translation_date = "20140210";
 var runtime_dependencies = [
 	"ffmpeg (required)",
 	"ffprobe (required)",
@@ -36,7 +37,7 @@ Downloads of QWinFF are hosted at SourceForge: https://sourceforge.net/projects/
 
 Latest stable QWinFF release is <b><%= version %></b> on <%= release_date %> (<a href="/news">changelogs</a>)
 
-Translation files included in the release are sometimes out-of-date because they are frequently updated. You can download the latest translation files ([20130911](http://sourceforge.net/projects/qwinff/files/translation/qwinff-ts-20130911.zip)) and copy all the ``*.qm`` files to the translation file directory (typically /usr/share/qwinff/translations on GNU/Linux and C:\Program Files (x86)\QWinFF\translations on Windows).
+Translation files included in the release are sometimes out-of-date because they are frequently updated. You can download the latest translation files ([<%= translation_date %>](http://sourceforge.net/projects/qwinff/files/translation/qwinff-ts-<%= translation_date %>.zip)) and copy all the ``*.qm`` files to the translation file directory (typically /usr/share/qwinff/translations on GNU/Linux and C:\Program Files (x86)\QWinFF\translations on Windows).
 
 **QWinFF depends on the following programs at runtime:**
 
