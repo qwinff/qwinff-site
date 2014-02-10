@@ -51,7 +51,7 @@ Translation files included in the release are sometimes out-of-date because they
 <a id="windows"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/windows.png"></div><div class="content">
 <h1>Windows</h1>[QWinFF <%= version %> Installer](<%= sourceforge_dl_url(files.w32_install) %>): install QWinFF on your computer
-[QWinFF <%= version %> Portable](<%= sourceforge_dl_url(files.w32_portable) %>): Portable version that doesn't require installation (7zip archive)</div></div>
+[QWinFF <%= version %> Portable](<%= sourceforge_dl_url(files.w32_portable) %>): Portable version that doesn't require installation (7zip sfx)</div></div>
 
 <a id="ubuntu"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/ubuntu.png"><br><img src="/img/distro/mint.png"></div><div class="content">

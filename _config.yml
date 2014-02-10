@@ -28,7 +28,7 @@ project:
     tbz2: qwinff_{VERSION}.tar.bz2
     tgz: qwinff_{VERSION}.tar.gz
     w32_install: qwinff_{VERSION}-setup.exe
-    w32_portable: qwinff-portable-{VERSION}.7z
+    w32_portable: qwinff-portable-{VERSION}.exe
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
