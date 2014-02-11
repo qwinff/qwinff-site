@@ -70,10 +70,11 @@ sudo apt-get install qwinff
 <ul><% for (var i=0; i<opensuse_releases.length; i++) { %><li><%= opensuse_releases[i] %></li><% } %></ul>
 ``` bash
 # get opensuse release
-RELEASE=`cat /etc/SuSE-release | sed -n "s/VERSION = \(.*\)$/openSUSE_\1/p"`
+RELEASE=`cat /etc/SuSE-release | sed -n "s/VERSION = \(.*\)$/\1/p"`
 
-# add repository
-sudo zypper addrepo http://download.opensuse.org/repositories/home:lzh9102/$RELEASE/home:lzh9102.repo
+# add repositories
+sudo zypper addrepo http://ftp.gwdg.de/pub/linux/packman/suse/$RELEASE/ packman
+sudo zypper addrepo http://download.opensuse.org/repositories/home:lzh9102/openSUSE_${RELEASE}/home:lzh9102.repo
 sudo zypper refresh
 
 # install qwinff
