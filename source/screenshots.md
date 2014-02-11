@@ -10,7 +10,7 @@ og_desc: QWinFF Screenshots
 
 <div class="screenshot">
   <img src="/img/screenshot/windows_xp.png"></img>
-  openSUSE 13.1 + KDE 4.11
+  Windows XP SP3
 </div>
 
 <div class="screenshot">
@@ -25,7 +25,7 @@ og_desc: QWinFF Screenshots
 
 <div class="screenshot">
   <img src="/img/screenshot/i18n_b.png"></img>
-  I18n
+  Internationalization Supporting (i18n)
 </div>
 
 <div class="screenshot">
