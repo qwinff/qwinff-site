@@ -46,7 +46,9 @@ Translation files included in the release are sometimes out-of-date because they
 <a id="tarball"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/tarball.png"></div><div class="content">
 <h1>Source Code</h1>[QWinFF <%= version %> Source Code](<%= sourceforge_dl_url(files.tbz2) %>) (tar.bz2)
-[QWinFF <%= version %> Source Code](<%= sourceforge_dl_url(files.tgz) %>) (tar.gz)</div></div>
+[QWinFF <%= version %> Source Code](<%= sourceforge_dl_url(files.tgz) %>) (tar.gz)
+<blockquote>Or you can get latest development version from git repository:
+`git clone 'git://github.com/qwinff/qwinff.git'`</blockquote></div></div>
 
 <a id="windows"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/windows.png"></div><div class="content">
