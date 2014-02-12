@@ -1,4 +1,4 @@
-title: Developer information
+title: Contribute
 date: 2013-09-18 09:23:29
 ---
 QWinFF is [free software](http://en.wikipedia.org/wiki/Free_software); it needs your contribution!
@@ -16,7 +16,8 @@ You can clone the repository anonymously by the following command:
 <div class="icon-and-text">
 <img src="/img/dev/i18n.png">
 <div class="content">
-<h1>Translating</h1>See [Translate](translate.html).
+<h1>Translating</h1><h3>Translating Online</h3>Translation files of QWinFF are hosted at [Transifex](https://www.transifex.com/projects/p/qwinff/). In order to translate translate on Transifex, you have to [register for a Transifex account](https://www.transifex.com/signup/).
+<h3>Translating Offline</h3>If you want to translate offline, you can download the latest translation package from the [Download page](downloads.html). If the translation package already contains your target language, just fill in missing translations in that file. If you're going to translate to a new language, please base your work on *qwinff-new-language.ts*. You may also want to download [Qt Linguist](http://qt-apps.org/content/show.php/Qt+Linguist+Download?content=89360) to help you edit the translation file. If you insist on editing the file manually, please read **[Translator's Notes](p/translators.html)** first. Once you are done, please mail the translation file to lzh9102@gmail.com and we will upload it to Transifex.
 </div></div>
 
 <div class="icon-and-text">
