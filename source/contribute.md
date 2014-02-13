@@ -57,5 +57,5 @@ You can clone the repository anonymously by the following command:
 <div class="icon-and-text">
 <img src="/img/dev/doc.png">
 <div class="content">
-<h1>Writing Documentation</h1>User documentation of QWinFF is still work in progress. The source files are hosted on [GitHub](http://github.com/qwinff/qwinff-doc/). It is written using [Sphinx Documentation Generator](http://sphinx-doc.org/) and published using [GitHub Pages](http://pages.github.com/). You can contribute to its content by sending pull requests on GitHub.
+<h1>Writing Documentation</h1>User documentation of QWinFF is still a work in progress. The source files are hosted on [GitHub](http://github.com/qwinff/qwinff-doc/). It is written using [Sphinx Documentation Generator](http://sphinx-doc.org/) and published using [GitHub Pages](http://pages.github.com/). You can contribute to its content by sending pull requests on GitHub.
 </div></div>
