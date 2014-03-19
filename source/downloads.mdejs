@@ -111,7 +111,7 @@ sudo yum install qwinff
 
 <a id="arch"></a>
 <div class="distro"><div class="logo"><img src="/img/distro/arch.png"></div><div class="content">
-<h1>Arch</h1>contents
+<h1>Arch</h1>QWinFF is currently available on <a href="https://aur.archlinux.org/packages/qwinff/">AUR</a>.
 </div></div>
 
 <a id="chakra"></a>
