@@ -1,29 +1,11 @@
 title: Contribute
 date: 2013-09-18 09:23:29
 ---
-<script src="http://coinwidget.com/widget/coin.js"></script>
 <blockquote class="pullquote">
 If you like QWinFF, maybe you can make some donation to us:
-<noscript>
-<br>Sending some <img style='margin-bottom:-3px;' src="/img/bitcoin.png"> <strong>Bitcoins</strong> to<br>
-  <code style='color:#E7831A;background-color:#ffdfba;border:none;'>1AF2B51BjqokiMuYaLoKzcp4xGH3pzWFEp</code>
-</noscript>
-<script>
-CoinWidgetCom.go({
-	wallet_address: "1AF2B51BjqokiMuYaLoKzcp4xGH3pzWFEp"
-	, currency: "bitcoin"
-	, counter: "hide"
-	, alignment: "bl"
-	, qrcode: true
-	, auto_show: false
-	, lbl_button: "Donate Bitcoins"
-	, lbl_address: "Send Bitcoin to this address:"
-	, lbl_count: "donations"
-	, lbl_amount: "BTC"
-});
-</script>
-
+<a href="https://flattr.com/submit/auto?user_id=lzh9102&url=http%3A%2F%2Fqwinff.github.io" target="_blank"><img src="//button.flattr.com/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
 </blockquote>
+
 QWinFF is [free software](http://en.wikipedia.org/wiki/Free_software); it needs your contribution!
 There are several ways to help the development of QWinFF:
 
