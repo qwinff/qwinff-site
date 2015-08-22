@@ -1,6 +1,10 @@
 {
-  "name": "hexo",
+  "name": "qwinff-site",
   "version": "2.4.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "hexo": "2.4.0",
+    "hexo-generator-feed": "0.1.0",
+    "hexo-generator-sitemap": "0.1.0"
+  }
 }
