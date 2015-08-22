@@ -19,6 +19,8 @@ QWinFF Logo and related artworks are created by [kuanyui](http://kuanyui.github.
 - Arabic translation by [Mohammed Ali](https://www.transifex.com/accounts/profile/AL_Zoruaee/)
 - Hungarian translation by [András Földi](https://www.transifex.com/accounts/profile/andrasf/)
 - Polish translation by [Toratora](https://www.transifex.com/accounts/profile/Sertomas/)
+- Portuguese translation by dult
+
 
 # Porting
 
