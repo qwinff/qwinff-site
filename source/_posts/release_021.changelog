@@ -1,0 +1,10 @@
+title: QWinFF 0.2.1 released
+date: 2015-08-22 09:30:00
+tags: changelog
+qwinff_release: 21
+---
+Version 0.2.1 (2015-08-22)
+
+- [Packaging] Support building with Qt5 (still compatible with Qt4).
+- [I18n] Added Portuguese translation.
+- [UI] MediaPlayerWidget: scoll to seek and click to toggle play/pause.

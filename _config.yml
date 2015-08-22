@@ -18,8 +18,8 @@ og_desc: Convert your media files easily
 
 # Project Information
 project:
-  version: 0.2.0
-  release_date: "2014-02-09"
+  version: 0.2.1
+  release_date: "2015-08-22"
   github: http://github.com/qwinff/qwinff
   updateinfo_xml: latest.xml
   download_page: downloads.html
