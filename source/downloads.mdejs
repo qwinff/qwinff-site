@@ -15,7 +15,7 @@ var translation_date = "20140210";
 var runtime_dependencies = [
 	"ffmpeg (required)",
 	"ffprobe (required)",
-	"ffplay (optional, for previewing audio/video cutting)",
+	"ffplay or mplayer (optional, for previewing audio/video cutting)",
 	"sox (optional, for adjusting audio speed)"
 ];
 
