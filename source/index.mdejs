@@ -4,7 +4,14 @@ og_title: QWinFF Media Converter
 og_type: website
 ---
 
-<a href="/screenshots.html"><img src="/img/screenshot/qwinff_showcase.png"></img></a>
+<%
+var slide_images_path = "/img/screenshot/";
+var slide_images = [
+  /* [filename, tooltip] */
+  ["output_setting.png", "Output Settings"],
+  ["opensuse_kde.png", "openSUSE KDE"],
+];
+%><div class="jcarousel"><ul><% for (var i=0; i<slide_images.length; i++) { %><li><img src="<%- slide_images_path %><%- slide_images[i][0] %>" title="<%- slide_images[i][1] %>"/></li><% } %></ul></div>
 
 QWinFF is a GUI for [FFmpeg](http://ffmpeg.org), a powerful command-line media converter. FFmpeg can read audio and video files in various formats and convert them into other formats. QWinFF provides an intuitive graphical interface and a rich set of presets to help you use ffmpeg easily without having to type a single command. Advanced users can also adjust conversion parameters like *bitrate* and *sample rate* in detail.
 
