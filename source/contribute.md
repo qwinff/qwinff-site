@@ -14,7 +14,7 @@ There are several ways to help the development of QWinFF:
 <div class="content">
 <h1>Source Code</h1>The git repository of QWinFF is hosted on [GitHub](http://github.com/qwinff).
 You can clone the repository anonymously by the following command:
-``git clone 'git://github.com/qwinff/qwinff.git'``
+``git clone 'https://github.com/qwinff/qwinff.git'``
 </div></div>
 
 <div class="icon-and-text">
